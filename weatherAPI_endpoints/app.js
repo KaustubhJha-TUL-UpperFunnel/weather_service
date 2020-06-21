@@ -41,7 +41,7 @@ app.post('/city/:name',async (req,res)=>{
     console.log(req.body);
     var query;
     var name = req.params.name.trim();
-    if(variables==={}){
+    if(req.body===undefined||isEmpty(variables)){
         query = gql`
         {
             getWeatherReport(name: "${name}"){
@@ -92,7 +92,6 @@ app.post('/city/:name',async (req,res)=>{
             }
         }
         `;
-        console.log(query.selectionSet);
     }else{
         //make query dynamic
         //need to extract and paste
