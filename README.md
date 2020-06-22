@@ -4,7 +4,7 @@ Free Public API to get all the weather of Indian states. This Project is made on
 ## How to run the app
 - 1.)  Either fork or clone
 - 2.)  Run:- npm install
-- 2b.) create a mongo db "weather" with collection "city" with required schema or __Use This__ [a link](https://github.com/kimj0588/weather_service/tree/master/weatherAPI_DB)
+- 2b.) create a mongo db "weather" with collection "city" with required schema or __Use This__ [link](https://github.com/kimj0588/weather_service/tree/master/weatherAPI_DB)
 - 2c.) Add your rapid key
 - 3.)  In the weatherAPI_GQL_SERVER Directory run :- npm run devStart
 - 4.)  In the weatherAPI_endpoints Directory run :- node app.js
