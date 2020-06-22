@@ -4,8 +4,8 @@ Free Public API to get all the weather of Indian states. This Project is made on
 ## How to run the app
 - 1.)  Either fork or clone
 - 2.)  Run:- npm install
-- 2b.) create a mongo db "weather" with collection "city" with required schema or __Use This__
-
+- 2b.) create a mongo db "weather" with collection "city" with required schema or __Use This__ [a link](https://github.com/kimj0588/weather_service/tree/master/weatherAPI_DB)
+- 2c.) Add your rapid key
 - 3.)  In the weatherAPI_GQL_SERVER Directory run :- npm run devStart
 - 4.)  In the weatherAPI_endpoints Directory run :- node app.js
 
@@ -152,11 +152,19 @@ __There are only the following abbreviation for now__
 
 ## For Just some Part of the Data you can throw in a body also.
 
+### _Put the values you want in current and hourly to be 1_
+#### Example if you only want dt in current and pressure in hourly
+
 ```
 {
 	"lat": 1,
 	"lon": 1,
-	"current":{},
-	"hourly":{}
+	"current":{
+	    "dt": 1
+	},
+	"hourly":{
+	    "dt": 1,
+	    "pressure": 1
+	}
 }
 ```
