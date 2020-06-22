@@ -104,7 +104,6 @@ __There are only the following abbreviation for now__
   "data": {
     "getWeatherReport": [
       {
-        "id": "5ee874c3f7bcbf5fec3bb79a",
         "lat": 29.24,
         "lon": 76.43,
         "current": {
