@@ -1,0 +1,17 @@
+{
+  "name": "weatherapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaustubh_Jha",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "mongodb": "^3.5.8",
+    "unirest": "^0.6.0",
+    "unix-time": "^1.0.1"
+  }
+}

@@ -1,0 +1,108 @@
+[
+    {
+        "name": "Madhya Pradesh, India",
+        "lat": 23.473324,	
+        "long": 77.947998
+    },
+    {
+        "name": "Tamil Nadu, India",
+        "lat":11.059821,
+        "long":78.387451
+    },
+    {
+        "name": "Telangana, India",	
+        "lat":17.123184,	
+        "long":79.208824
+    },
+    {
+        "name": "Haryana, India",	
+        "lat": 29.238478,	
+        "long": 76.431885
+    },
+    {
+        "name": "Chhattisgarh, India",	
+        "lat": 21.295132,	
+        "long": 81.828232
+    },
+    {
+        "name": "Haryana, India",	
+        "lat": 29.065773,	
+        "long": 76.040497
+    },
+    {
+        "name": "Bhitarwar, Madhya Pradesh, India",	
+        "lat": 25.794033,	
+        "long": 78.116531
+    },
+    {
+        "name": "Maharashtra, India",	
+        "lat": 19.601194,	
+        "long": 75.552979
+    },
+    {		
+        "name": "Tripura, India",	
+        "lat": 23.745127,	
+        "long": 91.746826
+	},
+    {		
+        "name": "Chandoor, Telangana, India",	
+        "lat": 17.874857,	
+        "long": 78.100815
+	},
+    {		
+        "name": "Karnataka, India",	
+        "lat": 15.317277,	
+        "long": 75.713890
+	},
+    {		
+        "name": "Kerala, India",	
+        "lat": 10.850516,	
+        "long": 76.271080
+	},
+    {		
+        "name": "Uttar Pradesh, India",	
+        "lat": 28.207609,	
+        "long": 79.826660
+	},
+    {		
+        "name": "Assam, India",	
+        "lat": 26.244156,	
+        "long": 92.537842
+	},
+    {		
+        "name": "Maharashtra, India",	
+        "lat": 19.663280,	
+        "long": 75.300293
+	},
+    {		
+        "name": "Karnataka, India",	
+        "lat": 15.317277,	
+        "long": 75.713890
+	},
+    {		
+        "name": "West Bengal, India",	
+        "lat": 22.978624,	
+        "long": 87.747803
+	},
+    {		
+        "name": "Gujarat, India",	
+        "lat": 22.309425,	
+        "long": 72.136230
+	},
+    {		
+        "name": "Odisha, India",	
+        "lat": 20.940920,	
+        "long": 84.803467
+	},
+    {		
+        "name": "Rajasthan, India",	
+        "lat": 27.391277,	
+        "long": 73.432617
+	},
+    {		
+        "name": "Himachal Pradesh,India",	
+        "lat": 32.084206,	
+        "long": 77.571167
+	}
+]
+
