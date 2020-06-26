@@ -1,0 +1,39 @@
+version: "3"
+services:
+  mongodb:
+    image: mongo:latest
+    environment :
+      - AUTH=no
+    ports:
+        - 27017:27017
+    volumes:
+        - "./mongodb_data_container:/app/db" 
+
+  dbupdateservice:
+    build: weatherAPI_DB
+    ports:
+        - 3030:3030
+    depends_on:
+        - mongodb
+
+  graphqlserver:
+    build: weatherAPI_GQL_SERVER
+    volumes:
+        - "./weatherAPI_GQL_SERVER/node_modules:/app/node_modules"
+    ports:
+        - 8080:8080
+    depends_on:
+        - mongodb
+
+  endpointsservice:
+      build: weatherAPI_endpoints
+      volumes:
+          - "./weatherAPI_endpoints/node_modules:/app/node_modules"
+      ports:
+        - 80:4000
+      depends_on:
+        - graphqlserver
+      links:
+        - graphqlserver
+
+

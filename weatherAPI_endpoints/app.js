@@ -11,7 +11,7 @@ const app = express();
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
-  uri: 'http://localhost:8080/graphql',
+  uri: 'http://graphqlserver:8080/graphql',
   fetch: fetch
 });
 
@@ -128,4 +128,4 @@ app.post('/city/:name',async (req,res)=>{
     }
 })
 
-app.listen(4000.,()=>console.log('Server Running'));
+app.listen(4000,'0.0.0.0');

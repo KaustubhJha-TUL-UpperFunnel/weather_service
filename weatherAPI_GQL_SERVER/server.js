@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-mongoose.connect('mongodb://127.0.0.1:27017/weather',{useNewUrlParser:true});
+mongoose.connect('mongodb://mongodb:27017/weather',{useNewUrlParser:true});
 
 mongoose.connection.once('open',()=>{
     console.log('connected to database');
@@ -22,4 +22,4 @@ app.use('/graphql',expressGraphQL({
 }))
 
 
-app.listen(8080.,()=>console.log('Server Running'));
+app.listen(8080,'0.0.0.0');

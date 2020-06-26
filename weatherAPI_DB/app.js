@@ -6,13 +6,13 @@ const unixTime = require('unix-time');
 var _COUNT = 22;
 
 
-var url = 'mongodb://127.0.0.1:27017';
+var url = 'mongodb://mongodb:27017';
 var I = 0;
-
+var _ID ;
 let dt = unixTime(new Date())-86400;
 
 function getNewCityDetails(){
-    if(I===21){
+    if(I===22){
         console.log("BREAKING");
         clearInterval(_ID);
     }
@@ -28,7 +28,7 @@ function getNewCityDetails(){
     });
     req.headers({
         "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-        "x-rapidapi-key": "YOUR_RAPID_KEY",
+        "x-rapidapi-key": "9c9c0ac5e2mshd84af4b05aaa638p15e691jsn0a5910340e27",
         "useQueryString": true
     });
     req.end((res)=>{
@@ -50,5 +50,8 @@ function getNewCityDetails(){
 }
 
 
+function every24Hour(){
+  ID_ = setInterval(getNewCityDetails, 12000);
+}
 
-var _ID = setInterval(getNewCityDetails, 12000);
+var HourID_ = setInterval(every24Hour,86400000)
