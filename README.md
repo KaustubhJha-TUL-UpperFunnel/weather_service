@@ -10,7 +10,7 @@ Free Public API to get all the weather of Indian states. This Project is made on
 - 2c.) ~Add your rapid key~
 
 ### To Do
-- [ ]  Handle Error Requests
+- [x]  Handle Error Requests :boom:
 - [x]  Dockerise the project :rocket: :boom:
 - [ ]  Host it for free
 - [x]  Update the Documentation
